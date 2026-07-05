@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit Sharma | Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght=200..700&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script>
+    function myfunction1(id) {
+      document.getElementById(id).classList.toggle("hidden");
+    }
+  </script>
+  <style>
+    body, main .main-text {
+      font-family: "Mozilla Text", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white min-h-screen font-sans overflow-x-hidden">
+
+  <!-- HERO SECTION - Now scales to full screen height on laptop/desktop -->
+  <main class="bg-cover bg-center flex flex-col items-center justify-center min-h-dvh w-full text-center px-4 pt-12 pb-16 relative" 
+        style="background-image: url('images/bg-image.JPG');">
+    
+    <div class="flex justify-center items-center max-w-xs md:max-w-md mb-6">
+      <img src="images/hero.PNG" class="h-auto max-h-64 md:max-h-85 object-contain">
+    </div>
+    
+    <h1 class="main-text text-4xl md:text-6xl font-bold tracking-tight text-white drop-shadow-lg max-w-4xl px-2">
+      Hey, It's <span class="text-[#D4FF2A]">Sumit Sharma</span><br class="hidden md:inline"> Frontend Developer & AI Integrator
+    </h1>
+    
+    <p class="font-mono text-gray-200 text-sm md:text-base mt-6 max-w-2xl px-4">
+      Building responsive web interfaces and accelerating development with AI workflows.
+    </p>
+    
+    <button class="btn font-semibold cursor-pointer bg-[#D4FF2A] py-2.5 px-8 mt-8 text-sm text-black rounded hover:bg-[#A4CC1F] active:bg-[#84A31D] transition-all animate-bounce">
+      <a href="#contact">Let's Connect!</a>
+    </button>
+  </main>
+
+  <!-- SVG CURVED LINE CONTAINER -->
+  <div class="w-full overflow-hidden leading-[0] pointer-events-none select-none bg-transparent">
+    <img src="images/line.svg" class="w-full md:mt-32 h-auto min-w-[1000px]">
+  </div>
+
+  <!-- SERVICES / WHAT I DO CARDS -->
+  <section class="max-w-6xl mx-auto px-4 -mt-18 sm:-mt-16 md:-mt-24 lg:-mt-32 relative md:h-140 z-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="rounded-xl p-6 text-center bg-white/10 backdrop-blur-xl border border-white/5 flex flex-col items-center justify-center min-h-[500px] shadow-2xl">
+        <svg class="text-white size-14 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        <div class="font-bold text-xl md:text-2xl mb-4">Modern Frontend Dev</div>
+        <div class="text-sm font-light text-gray-300 leading-relaxed">Building clean, semantic layout structures and highly interactive web apps using modern JavaScript (ES6+), Tailwind CSS, and Bootstrap.</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="rounded-xl p-6 text-center bg-white/10 backdrop-blur-xl border border-white/5 flex flex-col items-center justify-center min-h-[500px] shadow-2xl">
+        <svg class="text-white size-14 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M9 13a4.5 4.5 0 0 0 3-4"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M12 13h4"/><path d="M12 18h6a2 2 0 0 1 2 2v1"/><path d="M12 8h8"/><path d="M16 8V5a2 2 0 0 1 2-2"/><circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/></svg>
+        <div class="font-bold text-xl md:text-2xl mb-4">AI-Assisted Workflows</div>
+        <div class="text-sm font-light text-gray-300 leading-relaxed">Using advanced AI prototyping tools and prompt engineering to debug backend logic, speed up coding, and map out application workflows.</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="rounded-xl p-6 text-center bg-white/10 backdrop-blur-xl border border-white/5 flex flex-col items-center justify-center min-h-[500px] shadow-2xl">
+        <svg class="text-white size-14 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16v5"/><path d="M16 14.639V21"/><path d="M20 10.656V21"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18.463V21"/><path d="M8 14.656V21"/></svg>
+        <div class="font-bold text-xl md:text-2xl mb-4">Digital Optimization</div>
+        <div class="text-sm font-light text-gray-300 leading-relaxed">Crafting responsive, mobile-first designs optimized with crawler-friendly metadata for strong SEO foundation right from the first line of code.</div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION HEADER -->
+  <div id="skills" class="max-w-6xl mx-auto px-4 mt-32 text-center md:text-left">
+    <div class="p-6 bg-[#11141A] rounded-3xl border border-white/5 inline-block w-full md:w-full md:px-12">
+      <h2 class="text-3xl md:text-5xl font-bold leading-tight">
+        <span class="text-[#D4FF2A]">Technical Skills</span><br> & Expertise
+      </h2>
+    </div>
+  </div>
+
+  <!-- VIDEO SKILLS GRID -->
+  <div class="max-w-6xl mx-auto px-4 mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 ">
+    
+    <!-- Large Card -->
+    <div class="md:row-span-2 min-h-[220px] md:min-h-[600px] overflow-hidden rounded-2xl relative flex flex-col justify-center p-6 border border-white/5">
+      <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full brightness-50 blur-[4px] object-cover z-0">
+        <source src="images/clip1.mp4" type="video/mp4">
+      </video>
+      <div class="relative z-10 text-white text-center flex items-center justify-center h-full">
+        <h3 class="text-2xl md:text-4xl font-bold">Core Frontend Development</h3>
+      </div>
+    </div>
+
+    <!-- Layouts Card -->
+    <div class="rounded-2xl overflow-hidden h-44 md:h-auto md:min-h-[192px] relative flex flex-col justify-center border border-white/5">
+      <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full brightness-50 blur-[4px] object-cover">
+        <source src="images/clip2.mp4" type="video/mp4">
+      </video>
+      <div class="relative z-10 text-white text-center p-4">
+        <h3 class="text-xl md:text-2xl font-bold">HTML5 & CSS3 Layouts</h3>
+      </div>
+    </div>
+
+    <!-- JS Card -->
+    <div class="rounded-2xl overflow-hidden h-44 md:h-auto md:min-h-[192px] relative flex flex-col justify-center border border-white/5">
+      <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full brightness-50 blur-[4px] object-cover">
+        <source src="images/clip3.mp4" type="video/mp4">
+      </video>
+      <div class="relative z-10 text-white text-center p-4">
+        <h3 class="text-xl md:text-2xl font-bold">JavaScript (ES6+)</h3>
+      </div>
+    </div>
+
+    <!-- Tailwind Card -->
+    <div class="rounded-2xl overflow-hidden h-44 md:h-auto md:min-h-[192px] relative flex flex-col justify-center border border-white/5">
+      <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full brightness-50 blur-[4px] object-cover">
+        <source src="images/clip4.mp4" type="video/mp4">
+      </video>
+      <div class="relative z-10 text-white text-center p-4">
+        <h3 class="text-xl md:text-2xl font-bold">Tailwind CSS</h3>
+      </div>
+    </div>
+
+    <!-- Bootstrap Card -->
+    <div class="rounded-2xl overflow-hidden h-44 md:h-auto md:min-h-[192px] relative flex flex-col justify-center border border-white/5">
+      <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full brightness-50 blur-[4px] object-cover">
+        <source src="images/clip5.mp4" type="video/mp4">
+      </video>
+      <div class="relative z-10 text-white text-center p-4">
+        <h3 class="text-xl md:text-2xl font-bold">Bootstrap Framework</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- AI PRODUCTIVITY LIST SECTION -->
+  <div class="max-w-4xl mx-auto px-6 py-10 bg-[#11141A] border border-white/5 rounded-3xl mt-24 mb-24 md:my-50 ">
+    <h2 class="text-xl md:text-2xl font-bold"><span class="text-[#D4FF2A]">AI Productivity</span> & Prototyping</h2>
+    <ul class="space-y-3 pt-4 list-none pl-2 text-sm md:text-base text-gray-300">
+      <li class="flex items-center gap-2"><span class="text-[#D4FF2A]">→</span> Prompt Engineering (ChatGPT / Claude)</li>
+      <li class="flex items-center gap-2"><span class="text-[#D4FF2A]">→</span> Lovable AI (Rapid Prototyping)</li>
+      <li class="flex items-center gap-2"><span class="text-[#D4FF2A]">→</span> AI-Assisted Backend Logic (PHP)</li>
+      <li class="flex items-center gap-2"><span class="text-[#D4FF2A]">→</span> AI-Assisted Cloud Management (AWS)</li>
+    </ul>
+    
+    <hr class="border-[#D4FF2A]/30 mt-8 mb-6">
+    
+    <h2 class="text-xl md:text-2xl font-bold">Digital Strategy & Tools</h2>
+    <ul class="space-y-3 pt-4 list-none pl-2 text-sm md:text-base text-gray-300">
+      <li class="flex items-center gap-2"><span class="text-[#D4FF2A]">→</span> WordPress Ecosystem</li>
+      <li class="flex items-center gap-2"><span class="text-[#D4FF2A]">→</span> Crawler-Friendly Metadata & SEO Concepts</li>
+      <li class="flex items-center gap-2"><span class="text-[#D4FF2A]">→</span> Git & Version Control</li>
+      <li class="flex items-center gap-2"><span class="text-[#D4FF2A]">→</span> VS Code Environment</li>
+    </ul>
+  </div>
+
+  <!-- CONTACT SECTION (LET'S TALK) -->
+  <section id="contact" class="bg-[#0D131A] w-full py-16 px-4 md:px-12 md:h-screen  flex items-center justify-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 max-w-6xl w-full gap-8 items-stretch">
+      
+      <div class="flex flex-col justify-between py-4 text-center lg:text-left min-h-[180px] lg:min-h-[450px]">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-white">Got a project?</h2>
+          <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-[#D4FF2A] mt-2">Let's Talk!</h3>
+        </div>
+        
+        <div class="flex flex-col items-center lg:items-start gap-4 mt-8 lg:mt-0">
+          <a href="mailto:ss7675088@gmail.com" class="flex items-center gap-3 group text-gray-400 hover:text-[#D4FF2A] transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/></svg>
+            <span class="text-sm font-medium border-b border-transparent group-hover:border-[#D4FF2A] pb-0.5">ss7675088@gmail.com</span>
+          </a>
+
+          <a href="tel:+917877807071" class="flex items-center gap-3 group text-gray-400 hover:text-[#D4FF2A] transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            <span class="text-sm font-medium border-b border-transparent group-hover:border-[#D4FF2A] pb-0.5">+91-7877807071</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="bg-[#111A24] rounded-2xl p-6 md:p-10 border border-white/5 flex flex-col justify-between shadow-xl">
+        <form class="space-y-5">
+          <div>
+            <label class="block text-sm md:text-base font-semibold text-gray-200 mb-2">I am interested in...</label>
+          </div>
+          <input type="text" placeholder="Your Name" class="w-full bg-transparent border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none focus:border-white/30 transition-all" />
+          <input type="email" placeholder="Email" class="w-full bg-transparent border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none focus:border-white/30 transition-all" />
+          <textarea rows="4" placeholder="Message" class="w-full bg-transparent border border-white/10 rounded-lg px-4 py-3 text-sm text-white placeholder-gray-500 outline-none focus:border-white/30 resize-none transition-all"></textarea>
+          
+          <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-2">
+            <button type="button" class="flex items-center gap-2 text-xs text-gray-400 hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paperclip"><path d="M13.22 17.64a4.5 4.5 0 0 1-6.36-6.36l8.49-8.49a3 3 0 1 1 4.24 4.24l-8.49 8.49a1.5 1.5 0 0 1-2.12-2.12l8.49-8.49"/></svg>
+              <span class="underline underline-offset-2">Attach Files</span>
+            </button>
+            <button type="submit" class="w-full sm:w-auto bg-white text-[#0D131A] font-semibold text-sm px-6 py-2.5 rounded-lg hover:bg-[#D4FF2A] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <div class="text-center mt-16">
+    <button class="text-center border border-gray-500 px-8 py-2 rounded-full text-sm font-medium tracking-wide">FAQs</button>
+  </div>
+  <div class="text-center p-4 text-3xl md:text-4xl font-bold mt-2">Frequently Asked <br>Questions</div>
+
+  <div class="max-w-3xl mx-auto px-4 mt-8 mb-24">
+    <div class="flex flex-col border border-gray-800 rounded-2xl p-4 md:p-8 bg-[#070708]">
+      
+      <!-- FAQ 1 -->
+      <div class="border-b border-gray-800 py-4">
+        <div class="flex justify-between items-center font-medium text-sm md:text-base cursor-pointer py-2" onclick="myfunction1('dropdown1')">
+          <span>Where are you based?</span>
+          <button class="text-xl text-gray-400 px-2">+</button>
+        </div>
+        <div id="dropdown1" class="hidden pb-4 pt-2 text-xs md:text-sm text-gray-400 leading-relaxed">I am based in Udaipur, Rajasthan, India. I am fully available to work remotely or open for on-site opportunities in matching locations.</div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="border-b border-gray-800 py-4">
+        <div class="flex justify-between items-center font-medium text-sm md:text-base cursor-pointer py-2" onclick="myfunction1('dropdown2')">
+          <span>What is your stack for frontend development?</span>
+          <button class="text-xl text-gray-400 px-2">+</button>
+        </div>
+        <div id="dropdown2" class="hidden pb-4 pt-2 text-xs md:text-sm text-gray-400 leading-relaxed">My core toolkit includes HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, and Bootstrap. I am also actively expanding my skill set to cover the WordPress ecosystem.</div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border-b border-gray-800 py-4">
+        <div class="flex justify-between items-center font-medium text-sm md:text-base cursor-pointer py-2" onclick="myfunction1('dropdown3')">
+          <span>As a fresher, how do you handle development speed?</span>
+          <button class="text-xl text-gray-400 px-2">+</button>
+        </div>
+        <div id="dropdown3" class="hidden pb-4 pt-2 text-xs md:text-sm text-gray-400 leading-relaxed">I use tech-forward, AI-assisted workflows using tools like ChatGPT, Claude, and Lovable AI. This allows me to rapidly prototype interfaces, speed up coding tasks, and optimize my development cycle.</div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="border-b border-gray-800 py-4">
+        <div class="flex justify-between items-center font-medium text-sm md:text-base cursor-pointer py-2" onclick="myfunction1('dropdown4')">
+          <span>Can you work on backend logic or cloud tasks?</span>
+          <button class="text-xl text-gray-400 px-2">+</button>
+        </div>
+        <div id="dropdown4" class="hidden pb-4 pt-2 text-xs md:text-sm text-gray-400 leading-relaxed">While my focus is frontend development, I leverage prompt engineering to understand, write, and debug basic backend logic (Node.js/PHP) and assist with AWS cloud deployment setups.</div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="border-b border-gray-800 py-4">
+        <div class="flex justify-between items-center font-medium text-sm md:text-base cursor-pointer py-2" onclick="myfunction1('dropdown5')">
+          <span>Are you available for immediate hiring or freelance projects?</span>
+          <button class="text-xl text-gray-400 px-2">+</button>
+        </div>
+        <div id="dropdown5" class="hidden pb-4 pt-2 text-xs md:text-sm text-gray-400 leading-relaxed">Yes, I am actively looking for full-time junior frontend developer roles, internship opportunities, and freelance web projects, and I can join immediately.</div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="py-4">
+        <div class="flex justify-between items-center font-medium text-sm md:text-base cursor-pointer py-2" onclick="myfunction1('dropdown6')">
+          <span>Do you optimize websites for SEO?</span>
+          <button class="text-xl text-gray-400 px-2">+</button>
+        </div>
+        <div id="dropdown6" class="hidden pt-2 text-xs md:text-sm text-gray-400 leading-relaxed">Yes, I focus on building semantic code structures and adding crawler-friendly metadata so that the websites are structurally optimized for search engines right from the start.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER LINKS -->
+  <footer class="flex flex-col sm:flex-row items-center justify-between max-w-6xl mx-auto px-6 py-8 border-t border-white/5 gap-6">
+    <div class="underline cursor-pointer text-sm font-medium text-gray-300 hover:bg-[#D4FF2A] hover:text-black p-2 rounded transition-all">
+      Resume Download
+    </div>
+  </footer>
+  
+
+  <footer class="border-t border-white/5 bg-[#090D14] text-gray-400 text-sm mt-24 pt-16 pb-8">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+    <!-- Col 1: Bio -->
+    <div class="col-span-2 md:col-span-1">
+      <span class="text-white font-bold tracking-tight">SUMIT.DEV</span>
+      <p class="text-xs text-gray-500 mt-3 leading-relaxed">
+        Crafting rapid frontend prototypes and robust web layout structures optimized for modern performance.
+      </p>
+    </div>
+    
+    <!-- Col 2: Navigation -->
+    <div>
+      <h4 class="text-xs uppercase font-semibold text-white tracking-wider mb-4">Sitemap</h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="#" class="hover:text-[#D4FF2A] transition-colors">Home</a></li>
+        <li><a href="#skills" class="hover:text-[#D4FF2A] transition-colors">Skills</a></li>
+        <li><a href="#contact" class="hover:text-[#D4FF2A] transition-colors">Hire Me</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 3: Tech Stack Badge -->
+    <div>
+      <h4 class="text-xs uppercase font-semibold text-white tracking-wider mb-4">Core Focus</h4>
+      <ul class="space-y-2 text-xs text-gray-500">
+        <li>Tailwind CSS / Dev</li>
+        <li>AI Workflows (Claude)</li>
+        <li>SEO & Metadata</li>
+      </ul>
+    </div>
+
+    <!-- Col 4: Availability Status -->
+    <div>
+      <h4 class="text-xs uppercase font-semibold text-white tracking-wider mb-4">Status</h4>
+      <div class="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-400 px-3 py-1.5 rounded-full text-xs font-mono">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Available for Remote Roles
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Strip -->
+  <div class="max-w-6xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-600 gap-4">
+    <p>&copy; 2026 Sumit Sharma. All rights reserved.</p>
+    <p>Udaipur, Rajasthan, India</p>
+  </div>
+</footer>
